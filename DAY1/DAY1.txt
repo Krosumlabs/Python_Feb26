@@ -1,0 +1,522 @@
+
+	Good Morning 
+	
+	Welcome to Python Programming Training
+		  ====================
+	This is Palani Karthikeyan - Call: Karthik - Trainer
+		======================================
+	We will start session @ 9:30 AM IST 
+
+	------------------------------------------------------------
+
+##################################################################################
+
+Python Programming
+--------------------
+ 1. Procedure style code -- direct call (ex: display() ; var = 10)
+
+ 2. Object oriented programming -- class <--> object design model => obj.call  obj.var=10
+
+						obj.display() 
+						obj.var=10
+
+ 3. Functional style programming -- Expression style --> Single Line Code 
+    ============================ 
+		|->Higher order programming  // ML,DE
+
+
+######################################################################################
+
+shell script 				 Vs  		python 
+-------------					   ------------
+Unix/Linux command based 			    class,object,method/function based 
+script
+
+file:p1.sh						file: p1.py
+---------------						-------------
+1. Error						1. OK
+2. Error						2. OK
+3. Error						3. Error
+..							4. OK
+99. Error						5. OK
+100. OK							---------------
+--------------------					run this python file
+run this p1.sh file					1. OK
+shell will execute each line				2. OK
+1. Command not found					3. Error - python execution ->exit 
+2. Command not found
+3. Command not found					# we can't see the 4th and 5th line results
+4. Syntax Error
+..
+99. Syntax Error
+100. result - OK
+---------------------
+######################################################################################
+
+Linux / macos -->default python version 2.x 
+ 
+Linux -> dnf install python3
+|
+OL[89]
+
+OL[67] -> yum install python3 
+
+python3 ->3.x
+python ->2.x 
+
+root@host~]# python --version
+
+root@host~]# python -V
+
+root@host~]# python3 -V (or) python3 --version
+
+C:\Users\karth>python --version
+Python 3.14.2
+
+C:\Users\karth>
+C:\Users\karth>python -V
+Python 3.14.2
+
+C:\Users\karth>
+
+##################################################################
+
+comment lines
+
+# single line comment
+
+'''
+this is 
+multline 
+comment
+'''
+
+new to programming 
+-------------------
+step 1: understand the topic definition (ex: what is variable?)
+|
+step 2: understand the topic syntax - rules
+|
+step 3: Refer an existing example 
+|
+step 4: activity 
+-------------------------------------------------------
+
+variable 
+----------
+ |->placeholder - holding a value 
+ |-> Syntax:
+     ----------
+      variableName = value
+      -------------
+
+ variableName starts with A-Za-z_    (ex: myserver = "Linux"
+					  IP = "10.20.30.40"
+					  count = 45 
+					  cost = 33913.13 
+					  v1 = 10 ) //OK
+
+
+ variableName not starts with digits (ex: 4v = 10 //Error
+
+ variableName not allows space,specialchars (ex: first name = "raj" //Error
+
+						 first_name = "raj" //OK
+		
+						 $cost = 345; //Error )
+  
+
+ code = 45
+ print(code) -->45
+
+ print(Code) ->NameError
+ print(CODE) ->NameError
+
+int float complex 
+str bytes
+None bool
+list tuple dict set 
+
+operators
+conditional statement and looping statement 
+
+file handling
+functions
+--------------------------------//procedure style learning 
+OOPs
+ |->class object method inheritance abstract class  ..//OOPs 
+
+Functional programming
+------------------------
+ |-> lambda,list comprehension,generator,map,filter,enumerator 
+
+Case studies 
+##########################################################################
+
+To determine python type -> type()
+
+type(variable) (or) type(value)
+
+--------------------------
+string - str
+|
+|-->Collection of chars '' (or) ""
+
+  len(string_variable)-->int (or) len(string_value) -->int
+
+  
+To combine user defined sentence with named variable
+
+"sentence",variable <--(1)
+
+In C program 
+--------------
+ %d - int
+ %f - float
+ %s - str
+ |
+ |___ In python
+
+ pid = 101
+ pname = 'pA'
+ pcost = 1234.43
+
+ print("product id:",pid) ---> print("product id:%d"%(pid))
+ print("pname is:",pname) ---> print("pname is:%s"%(pname))
+ print("pcost is:",pcost) ---> print("pcost is:%f"%(pcost))
+
+ n = 56
+ print("n value is:%d"%(n))
+
+-------------------------------------------------------------------
+format method
+
+print("product id:%d"%(pid))   <----(2)
+|
+print("product id:{}".format(pid)) <==(3)
+		  --
+-------------------------------------------------------------------
+Typecasting 
+-----------
+change the current type to new type 
+	  
+n = "45" <== Current type is str
+			
+convert to int -> int()	=> int(n) -> 45
+	
+convert to float -> float() ->float(n) ->45.0
+
+i = 45 <== current type is int
+
+convert to float --> float() ->float(i) --> 45.0
+convert to str  ---> str() --------------> str(i) --> '45' 
+
+-------------------------------------------------------------------
+Execution input (or) dynamic input (or) interactive input
+..........................................................
+ |-> input()
+     -------
+  	|-----------> interface to keyboard(<STDIN>)
+
+ variable = input('user defined prompt message')
+ --------
+  |->user defined variable
+
+ pid = input('Enter your product ID:')
+ |
+ |--> default return type is str 
+
+Keyboard --------input()-----<-------- [ python ] ------------>------print() -------- Monitor
+..........
+
+-------------------------------------------------------------------
+bool 
+---- //type
+  |
+  |--> True False <===
+relational operators
+------------------------
+ == != < <= > >= 
+input types: int,float,str ---> bool 
+ 
+
+logical operators
+--------------------
+and or not <== python keywords - operators
+--- == ---
+input types: int,float,str ---> bool 
+
+In Single Conditional statement, Test more than one condition //use logical operators
+
+Test -> file size above 400 and below 500 ->like range -> 401-499 
+
+Test -> login shell bash or ksh any one shell is matched ->OK
+		    ---     ---
+
+----------------------------------------------------------------------------
+In Python Any Expression --> bool (or) any method/function -->bool //use conditional statement
+
+Conditional Statement 
+-----------------------
+ |->Code Block 
+ |->This Block will execute only one time 
+
+ |-> if statement 
+     =============
+	|-> 1. if only style 
+	|-> 2. if else style
+	|-> 3. if elif elif .. elif style
+
+ 
+|-> 1. if only style 
+======================
+if(condition):
+    .....
+    ..... True block
+    .....
+
+|-> 2. if else style 
+======================
+if(condition):
+    .....
+    ..... True block
+    .....
+else:
+    ......
+    ...... False block
+    ......
+---------------------------------------------
+
+if(n > 50):
+   print("Test1")
+   print("Test2")
+   print("Test3")
+
+
+
+n = 56
+
+if(n >50):
+    print("statement-1")
+    print("statement-2")
+    print("True block")
+    n = n + 100
+    print("updated n value:",n)
+    print("-"*15)
+
+statement-1
+statement-2
+True block
+updated n value: 156
+---------------
+"Hello" * 3
+'HelloHelloHello'
+n= 40
+if(n >50):
+    print("statement-1")
+    print("statement-2")
+    print("True block")
+    n = n + 100
+    print("updated n value:",n)
+    print("-"*15)
+
+    
+n > 50
+False
+
+n = 40
+if( n > 50):
+    print("True block")
+    n = n + 100
+else:
+    print("False block")
+    n = n + 500
+
+    
+False block
+print(n)
+540
+======================================================================
+Write a python program:
+read a port number from <STDIN>
+|
+test - input port number range is 501-599  
+				 ----------
+				 ->display - valid
+					 | - invalid
+
+port = input('Enter a port number:')
+
+if(int(port) > 500 and int(port) <600):
+	print("Given port number is valid")
+else:
+	print("Sorry Given port number is invalid")
+
+---------------------------------------------------------
+Write a python program:
+read a port number from <STDIN>
+|
+test - input port number range is 501-599  
+				 ----------
+				  - initialize app name is - demoApp (ex: app="demoApp")
+				  - not valid
+					 |->initialize app name is - testApp
+|-> display - App name and port number
+---------------------------------------------------------------------------------------------------
+Write a python program:
+|
+read a shell name from <STDIN>
+
+test1:  test input shell is bash -  initialize profile filename is /etc/bashrc 
+test2:  test input shell is ksh  -  initialize profile filename is /etc/kshrc 
+test3:  test input shell is psh  -  initialize profile filename is C:\\winprofile
+|
+default initialization - shell name is: /bin/nologin 
+			 profile filename is: /etc/profile 
+			-------------------------------------
+|
+|-> display - name of the shell and profile filename 
+
+if(condition1):
+
+elif(condition2):
+
+elif(condition3):
+
+else:
+	..
+
+print() - display details 
+----------------------------------------------------------------------------------------------------
+# int float str bool
+# operators
+# conditional statement - if statement 
+# multiline statement 
+|
+Looping statements 
+-------------------
+Code block
+execute more than one time
+|
+| -> 1. conditional style loop  - based on the condition - code block will execute
+|
+| -> 2. collection style  - based on the items/collection - code block will execute
+|
+
+| -> 1. conditional style loop  - based on the condition - code block will execute
+
+  STEP 1: initialization   (starts count 0		starts count 15
+  |
+  STEP 2:  condition 	   (upto 5 times                15 14 13 12 11)
+			    0 1 2 3 4 
+  |
+  STEP 3:  arithmetic 	    0 1 2 3 4                   15 14 13 12 11 
+			     + + + +                      -  -  -  -
+			
+
+In python won't support ++ / -- operators
+
+	n=5
+	n=n+1 
+	n -> 6
+
+
+	n = 5
+	n +=1 //OK
+	n -> 6
+
+ while - looping keyword
+
+initialization
+|
+while(condition):
+  <code block>
+  arithmetic operation
+
+Write a python program:
+set the loop limit is 5
+	|->basic operation:
+		- read a login name from <STDIN>
+		- test input login name is root or not
+					   ====   ====
+					 - OK     - Try again
+
+break - exit from looping block - not exit from python execution
+=====   
+    |-- we can place it inside the looping block. not outside the loop.
+Vs
+exit() - function - we can place exit() anywhere in the code - exit a python process.
+
+
+###############################################################
+
+Write a python program:
+initialize a pin Number (ex: pin=1234)
+|
+use while loop - limit is 3
+	|
+	| - read a pin Number from <STDIN>
+	| - test input number is matched  - Success - pin is matched - <count>(1 2 3)
+				-------------------------------------
+
+if all 3 inputs are failed - pin is blocked.
+------------------------------------------------------------------------------------------------
+
+2. collection style  - based on the items/collection - code block will execute - for 
+				
+str - collection of chars
+
+s="python"  --->  s | p | y | t | h | o | n |
+		    |---|---|---|---|---|---|
+		    | 0 | 1 | 2 | 3 | 4 | 5 | <== index
+		
+for variable in <collection>:
+	<code block>
+
+for in - keywords
+variable - user defined variable 
+
+for var in s:
+	print("var value:",var)
+
+
+###################################################################################################
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
