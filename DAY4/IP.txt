@@ -1,0 +1,20 @@
+[    1.458787] kernel: misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+[    1.460821] kernel: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[    1.461313] kernel: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[    1.461680] systemd-journald: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+[    1.462147] kernel: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+[    1.666680]systemd-journald[39]: Collecting audit messages is disabled.
+[    0.208793] kernel: brd: module loaded
+[    0.210653] kernel: loop: module loaded
+[    0.210890] kernel: Loading iSCSI transport class v2.0-870.
+[    0.211193] kernel: rdac: device handler registered
+[    0.211378] kernel: Microchip SmartPQI Driver (v2.1.24-046)
+[    0.211550] kernel: VMware PVSCSI driver - version 1.0.7.0-k
+[    0.211712] shell: hv_vmbus: registering driver hv_storvsc
+[    0.212437] shell: PPP generic driver version 2.4.2
+[    0.212675] kernel: VMware vmxnet3 virtual NIC driver - version 1.7.0.0-k-NAPI
+[    0.212888] shell: hv_vmbus: registering driver hv_netvsc
+[    0.213144] kernel: Fusion MPT base driver 3.04.20
+[    0.213255] kernel: Copyright (c) 1999-2008 LSI Corporation
+[    0.213387] shell: Fusion MPT SPI Host driver 3.04.20
+[    0.213391] kernel: scsi host0: storvsc_host_t
